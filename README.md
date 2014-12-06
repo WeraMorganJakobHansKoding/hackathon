@@ -1,7 +1,7 @@
 hackathon
 =========
 
-Our hackathon project
+Our hackathon project is awesome
 
 Test commit to test
 

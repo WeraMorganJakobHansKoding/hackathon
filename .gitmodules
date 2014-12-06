@@ -1,0 +1,3 @@
+[submodule "lib/quandl"]
+	path = lib/quandl
+	url = git@github.com:DannyBen/php-quandl.git

@@ -3,8 +3,10 @@
 /* === GENERAL === */
 
 h1 {
-	font-family: 'Rock Salt', Georgia, sans-serif;
 	color: #fff;
+    font-family: "Rock Salt",Georgia,sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
 }
 h2 {
 	font-family: 'Roboto', sans-serif;
@@ -31,15 +33,25 @@ header {
 	width: 90%;
 	margin: 0 auto;
 }
+header h1 {
+	float: left;
+    margin: 0 0 0 2%;
+    width: 40%;
+}
 #changeCountry {
-	width: 20%;
 	float: right;
+    margin: 0.5% 0 0;
+    width: 15%;
 }
 #changeCountry img {
-
+	display: inline-block;
+    vertical-align: middle;
 }
 #changeCountry p {
-	font-weight: bold;
+	display: inline-block;
+    font-weight: bold;
+    margin-left: 1%;
+    color: #DDDDDD;
 }
 
 /* === COUNTRY BOX === */

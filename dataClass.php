@@ -59,10 +59,8 @@ class Data
         $urls['education'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
         $urls['gni'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
 
-        var_dump($urls);
-
         $country_data['population'] = $this->quandl_call->getSymbol($urls['population'], $parameters);
-        $country_data['tourists'] = $this->quandl_call->getSymbol($urls['tourists'], $parameters);
+        /*$country_data['tourists'] = $this->quandl_call->getSymbol($urls['tourists'], $parameters);
         $country_data['military'] = $this->quandl_call->getSymbol($urls['military'], $parameters);
         $country_data['co2'] = $this->quandl_call->getSymbol($urls['co2'], $parameters);
         $country_data['coal_energy'] = $this->quandl_call->getSymbol($urls['coal_energy'], $parameters);
@@ -72,7 +70,7 @@ class Data
 
         if ($country !== 'USA') {
             $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][1]);
-        }
+        }*/
 
         if ($this->quandl_call->error) {
             echo $this->quandl_call->error . " - " . $this->quandl_call->last_url;

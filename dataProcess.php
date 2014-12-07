@@ -21,6 +21,7 @@ foreach ($data_container as $theme_name => $theme_properties) {
         }
     }
     foreach ($theme_properties['data'] as $data_property) {
+        var_dump($data_property);
         $date_value = strtotime($data_property[$theme_date_key]);
         $year_value = date('Y', $date_value);
         if ($data_property[$theme_value_key] === 0) {

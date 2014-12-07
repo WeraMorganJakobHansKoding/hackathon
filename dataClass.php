@@ -46,7 +46,7 @@ class Data
     function getCountryData($country)
     {
         $parameters = array(
-            'trim_start' => '1990',
+            'trim_start' => '1994',
             'trim_end' => '2010',
             'collapse' => 'annual'
         );

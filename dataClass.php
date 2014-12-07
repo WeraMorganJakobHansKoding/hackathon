@@ -84,7 +84,7 @@ class Data
     function dataCache($action, $url, $data=NULL)
     {
         $cache_key = md5("quandl:$url");
-        $cache_file = "/$cache_key";
+        $cache_file = "__DIR__/$cache_key";
 
         if ($action == "get" and file_exists($cache_file)) {
             return file_get_contents($cache_file);

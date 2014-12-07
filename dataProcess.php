@@ -31,6 +31,8 @@ foreach ($data_container as $theme_name => $theme_properties) {
     }
 }
 
+echo "<pre>";
 var_dump($country_data);
+echo "</pre>";
 
 ?>

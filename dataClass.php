@@ -66,10 +66,10 @@ class Data
             'trim_end' => '2010-12-31'
         );
 
-        return $this->quandl_call->getSymbols($symbols_array, $parameters);
+        $country_data = $this->quandl_call->getSymbols($symbols_array, $parameters);
 
+        return $country_data;
     }
-
 
     // Cache handling to save on calls to API
     function dataCache($action, $url, $data=NULL)

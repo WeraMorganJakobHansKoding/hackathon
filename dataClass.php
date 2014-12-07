@@ -59,7 +59,7 @@ class Data
         $urls['education'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
         $urls['gni'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
 
-        $country_data['population'] = $this->quandl_call->getSymbol($urls['population'], $parameters);
+        $country_data['population'] = $this->quandl_call->getSymbol($urls['population']);
         /*$country_data['tourists'] = $this->quandl_call->getSymbol($urls['tourists'], $parameters);
         $country_data['military'] = $this->quandl_call->getSymbol($urls['military'], $parameters);
         $country_data['co2'] = $this->quandl_call->getSymbol($urls['co2'], $parameters);

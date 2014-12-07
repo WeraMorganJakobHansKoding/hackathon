@@ -74,6 +74,10 @@ class Data
             $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][2], $parameters);
         }
 
+        if ($this->quandl_call->error) {
+            echo $this->quandl_call->error . " - " . $this->quandl_call->last_url;
+        }
+
         return $country_data;
     }
 

@@ -57,7 +57,7 @@ class Data
         $urls['co2'] = 'WORLDBANK/' . $this->countries[$country][0] . '_EN_ATM_CO2E_KT';
         $urls['coal_energy'] = 'WORLDBANK/' . $this->countries[$country][0] . '_EG_ELC_COAL_KH';
         $urls['forests'] = 'WORLDBANK/' . $this->countries[$country][0] . '_AG_LND_FRST_K2';
-        $urls['education'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
+        $urls['education'] = 'WORLDBANK/' . $this->countries[$country][0] . '_SE_XPD_TOTL_GN_ZS';
         $urls['gni'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
 
         $country_data['population'] = $this->quandl_call->getSymbol($urls['population'], $parameters);

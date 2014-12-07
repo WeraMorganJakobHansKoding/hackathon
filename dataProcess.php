@@ -1,9 +1,5 @@
 <?php
 
-echo "Something";
-
-ini_set('error_reporting', 'E_ALL');
-
 require('dataClass.php');
 
 $new_call = new Data();

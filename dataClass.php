@@ -40,7 +40,7 @@ class Data
         require('lib/quandl/Quandl.php');
 
         $this->quandl_call = new Quandl($quandl_api_token);
-        $this->quandl_call->cache_handler = 'dataCache';
+        //$this->quandl_call->cache_handler = 'dataCache';
     }
 
     function getCountryData($country)

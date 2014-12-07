@@ -71,7 +71,7 @@ class Data
         $country_data['gni'] = $this->quandl_call->getSymbol($urls['gni'], $parameters);
 
         if ($country !== 'USA') {
-            $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][1], $parameters);
+            $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][1]);
         }
 
         if ($this->quandl_call->error) {

@@ -62,7 +62,7 @@ header h1 {
     margin-left: 1%;
     color: #DDD;
 }
-#changeCountry a:hover {
+.chg:hover {
 	color: #2196F3;
 }
 

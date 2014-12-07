@@ -26,10 +26,10 @@ class Data
         'Japan' => array('JPN', 'JPY'),
         'Thailand' => array('THA', 'THB'),
         'India' => array('IND', 'INR'),
-        'Saudi Arabia' => array('SAU', 'SAR'),
+        'SaudiArabia' => array('SAU', 'SAR'),
         'Pakistan' => array('PAK', 'PKR'),
         'Israel' => array('ISR', 'ILS'),
-        'South Africa' => array('ZAF', 'ZAR'),
+        'SouthAfrica' => array('ZAF', 'ZAR'),
         'Nigeria' => array('NGA', 'NGN'), 
         'Cameroon' => array('CMR', 'XAF')
     ); 

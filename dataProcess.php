@@ -23,7 +23,7 @@ foreach ($data_container as $theme_name => $theme_properties) {
     foreach ($theme_properties->data as $data_property) {
         $date_value = strtotime($data_property[$theme_date_key]);
         $year_value = date('Y', $date_value);
-        if ($data_property[$theme_value_key] > 0.00000001) {
+        if ($data_property[$theme_value_key] < 0.00000001) {
             $country_data[$theme_name][$year_value] = FALSE;
         } else if (2010 >= intval($year_value)) {
             $country_data[$theme_name][$year_value] = $data_property[$theme_value_key];

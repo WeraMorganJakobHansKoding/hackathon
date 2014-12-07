@@ -79,8 +79,8 @@ foreach ($country_data as $country_theme_name => $country_theme_data) {
 
 unset($finished_data['1994']);
 
-echo "<pre>";
-var_dump($finished_data);
-echo "</pre>";
+foreach ($finished_data as $data_year => $year_themes) {
+}
+
 
 ?>

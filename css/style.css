@@ -2,22 +2,30 @@
 
 /* === GENERAL === */
 
+body {
+	background-color: #20202F;
+}
 h1 {
 	color: #fff;
-    font-family: "Rock Salt",Georgia,sans-serif;
-    font-size: 1.6em;
-    font-weight: 100;
+	font-family: 'Give You Glory', Georgia,sans-serif;
+    font-size: 2em;
+    font-weight: 300;
 }
 h2 {
-	font-family: 'Roboto', sans-serif;
 	color: #616176;
-	font-size: 2em;
+    display: inline-block;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    vertical-align: middle;
+    margin: 0;
 }
 a {
 	text-decoration: none;
 }
 p {
 	font-family: 'Roboto', sans-serif;
+	color
 }
 .clear {
 	clear: both;
@@ -32,10 +40,11 @@ header {
 	background-color: #30303F;
 	width: 90%;
 	margin: 0 auto;
+	margin: 0 auto 1%;
 }
 header h1 {
 	float: left;
-    margin: 0 0 0 2%;
+    margin: 0.5% 0 0 2%;
     width: 40%;
 }
 #changeCountry {
@@ -51,26 +60,43 @@ header h1 {
 	display: inline-block;
     font-weight: bold;
     margin-left: 1%;
-    color: #DDDDDD;
+    color: #DDD;
+}
+#changeCountry a:hover {
+	color: #2196F3;
 }
 
 /* === COUNTRY BOX === */
 
 #countryBox {
-	width: 100%;
-	margin: 0 auto;
+	background-color: #424251;
+    border-radius: 24px;
+    margin: 1% auto;
+    padding: 1% 0;
+    width: 87%;
 }
 .countryTxt {
 	width: 90%;
 	margin: 0 auto;
+	text-align: center;
 }
 .countryTxt ul {
-	padding: 0;
-	margin: 0;
+	display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 63%;
 }
 .countryTxt ul li {
 	display: inline-block;
-	vertical-align: top;
+    line-height: 200%;
+    margin: 0 1%;
+    vertical-align: bottom;
+}
+.countryTxt ul li a {
+	color: #CACAD8;
+	font-family: "Roboto",sans-serif;
+	font-size: 0.8em;
 }
 .countryTxt ul li a:hover {
 	color: #2196F3;
@@ -81,9 +107,23 @@ header h1 {
 #tileBox {
 	width: 90%;
 	margin: 0 auto;
+	text-align: center;
 }
 .tile {
-
+	display: inline-block;
+    height: 170px;
+    padding: 1%;
+    vertical-align: top;
+    width: 170px;
+    margin-bottom: 4px;
+}
+.tile p {
+	color: #fff;
+    font-size: 1.3em;
+    font-weight: 300;
+    margin: 32px auto 0;
+    text-align: center;
+    width: 90%;
 }
 #coral { background-color: #F44336; }
 #green { background-color: #4CAF50; }
@@ -99,13 +139,102 @@ header h1 {
 #pBlue { background-color: #3F51B5; }
 #themeBox {
 	width: 90%;
-	margin: 0 auto;
+	margin: 20px auto;
+	text-align: center;
 }
 .theme {
-	background-color: #1A1A26;
-	border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 22px 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 83px;
+    transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
 }
 .theme p {
-	font-size: ;
-	color: #9797A5;
+	font-size: 0.9em;
+}
+.tourism {
+	color: #F44336;
+  	border: 2px #F44336 solid;
+}
+.tourism:hover {
+	background-color: #F44336;
+  	color: #fff
+}
+.military {
+	color: #56723D;
+  	border: 2px #56723D solid;
+}
+.military:hover {
+	background-color: #56723D;
+  	color: #fff
+}
+.co2 {
+	color: #2196F3;
+  	border: 2px #2196F3 solid;
+}
+.co2:hover {
+	background-color: #2196F3;
+  	color: #fff
+}
+.pop {
+	color: #FF8000;
+  	border: 2px #FF8000 solid;
+}
+.pop:hover {
+	background-color: #FF8000;
+  	color: #fff
+}
+.violence {
+	color: #923059;
+  	border: 2px #923059 solid;
+}
+.violence:hover {
+	background-color: #923059;
+  	color: #fff
+}
+.themeSix {
+	color: #F06292;
+  	border: 2px #F06292 solid;
+}
+.themeSix:hover {
+	background-color: #F06292;
+  	color: #fff
+}
+.themeSeven {
+	color: #FFC107;
+  	border: 2px #FFC107 solid;
+}
+.themeSeven:hover {
+	background-color: #FFC107;
+  	color: #fff
+}
+.themeEight {
+	color: #009688;
+  	border: 2px #009688 solid;
+}
+.themeEight:hover {
+	background-color: #009688;
+  	color: #fff
+}
+.themeNine {
+	color: #607D8B;
+  	border: 2px #607D8B solid;
+}
+.themeNine:hover {
+	background-color: #607D8B;
+  	color: #fff
+}
+.themeTen {
+	color: #3F51B5;
+  	border: 2px #3F51B5 solid;
+}
+.themeTen:hover {
+	background-color: #3F51B5;
+  	color: #fff
 }

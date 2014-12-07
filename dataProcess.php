@@ -13,7 +13,7 @@ $data_container = $data_handler->getCountryData($country);
 
 foreach ($data_container as $theme_name => $theme_properties) {
     echo "<pre>";
-    var_dump ($theme_properties);
+    var_dump ($theme_properties->column_names);
     echo "</pre>";
     foreach ($theme_properties['column_names'] as $column_titles_key => $column_titles_value) {
         if ($column_titles_value === 'Value') {

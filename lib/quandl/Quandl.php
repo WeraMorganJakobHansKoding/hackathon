@@ -130,6 +130,7 @@ class Quandl {
 			$this->was_cached = true;
 		}
 		else {
+            echo $url;
 			$data = @file_get_contents($url);
 			if($data)
 				call_user_func($this->cache_handler, "set", $url, $data);

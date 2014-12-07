@@ -136,6 +136,8 @@
 
 			<div id="slideWrapper">
 				<div id="slider"></div>
+				<div class="oldTimes">1995</div>
+				<div class="newTimes">2010</div>
 			</div>
 		
 		</div>

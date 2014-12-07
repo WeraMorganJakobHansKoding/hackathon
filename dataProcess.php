@@ -12,8 +12,7 @@ $data_handler = new Data();
 $data_container = $data_handler->getCountryData($country);
 
 foreach ($data_container as $theme_name => $theme_properties) {
-    var_dump($theme_name);
-    foreach ($theme_name['column_names'] as $column_titles_key => $column_titles_value) {
+    foreach ($theme_properties['column_names'] as $column_titles_key => $column_titles_value) {
         if ($column_titles_value === 'Value') {
             $theme_value_key = $column_titles_key;
         }
@@ -21,7 +20,7 @@ foreach ($data_container as $theme_name => $theme_properties) {
             $theme_date_key = $column_titles_key;
         }
     }
-    foreach ($theme_name['data'] as $data_property) {
+    foreach ($theme_properties['data'] as $data_property) {
         $date_value = strtotime($data_property[$theme_date_key]);
         $year_value = date('Y', $date_value);
         if ($data_property[$theme_value_key] === 0) {
@@ -31,5 +30,7 @@ foreach ($data_container as $theme_name => $theme_properties) {
         }
     }
 }
+
+var_dump($country_data);
 
 ?>

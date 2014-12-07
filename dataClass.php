@@ -50,14 +50,14 @@ class Data
             'trim_end' => '2010-12-31'
         );
 
-        $urls['population'] = 'WORLDBANK/' . $this->countries[$country][1] . '_SP_POP_TOTL';
-        $urls['tourists'] = 'WORLDBANK/' . $this->countries[$country][1] . '_ST_INT_ARVL';
-        $urls['military'] = 'WORLDBANK/' . $this->countries[$country][1] . '_MS_MIL_XPND_CN';
-        $urls['co2'] = 'WORLDBANK/' . $this->countries[$country][1] . '_EN_ATM_CO2E_KT';
-        $urls['coal_energy'] = 'WORLDBANK/' . $this->countries[$country][1] . '_EG_ELC_COAL_KH';
-        $urls['forests'] = 'WORLDBANK/' . $this->countries[$country][1] . '_AG_LND_FRST_K2';
-        $urls['education'] = 'WORLDBANK/' . $this->countries[$country][1] . '_NY_GNP_MKTP_CN';
-        $urls['gni'] = 'WORLDBANK/' . $this->countries[$country][1] . '_NY_GNP_MKTP_CN';
+        $urls['population'] = 'WORLDBANK/' . $this->countries[$country][0] . '_SP_POP_TOTL';
+        $urls['tourists'] = 'WORLDBANK/' . $this->countries[$country][0] . '_ST_INT_ARVL';
+        $urls['military'] = 'WORLDBANK/' . $this->countries[$country][0] . '_MS_MIL_XPND_CN';
+        $urls['co2'] = 'WORLDBANK/' . $this->countries[$country][0] . '_EN_ATM_CO2E_KT';
+        $urls['coal_energy'] = 'WORLDBANK/' . $this->countries[$country][0] . '_EG_ELC_COAL_KH';
+        $urls['forests'] = 'WORLDBANK/' . $this->countries[$country][0] . '_AG_LND_FRST_K2';
+        $urls['education'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
+        $urls['gni'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
 
         var_dump($urls);
 
@@ -71,7 +71,7 @@ class Data
         $country_data['gni'] = $this->quandl_call->getSymbol($urls['gni'], $parameters);
 
         if ($country !== 'USA') {
-            $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][2], $parameters);
+            $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][1], $parameters);
         }
 
         if ($this->quandl_call->error) {

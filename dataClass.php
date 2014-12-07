@@ -45,28 +45,25 @@ class Data
 
     function getCountryData($country)
     {
-        $population = 'WORLDBANK/' . $this->countries[$country][1] . '_SP_POP_TOTAL';
-        $tourists = 'WORLDBANK/' . $this->countries[$country][1] . '_ST_INT_ARVL';
-        $military = 'WORLDBANK/' . $this->countries[$country][1] . '_MS_MIL_XPND_CN';
-        $co2 = 'WORLDBANK/' . $this->countries[$country][1] . '_EN_ATM_CO2E_KT';
-        $coal_energy = 'WORLDBANK/' . $this->countries[$country][1] . '_EG_ELC_COAL_KH';
-        $forests = 'WORLDBANK/' . $this->countries[$country][1] . '_AG_LND_FRST_K2';
-        $education = 'WORLDBANK/' . $this->countries[$country][1] . '_SE_XPD_TOTL_GN_ZS';
-        $gni = 'WORLDBANK/' . $this->countries[$country][1] . '_NY_GNP_MKTP_CN';
-
-        $symbols_array = array($population, $tourists, $military, $co2, $coal_enery, $forests, $education, $gni);
-
-        if ($country !== 'USA') {
-            $exchange_usd = 'CURRFX/USD' . $this->countries[$country][2];
-            array_push($symbols_array, $exchange_usd);
-        }
-
         $parameters = array(
             'trim_start' => '1990-12-31',
             'trim_end' => '2010-12-31'
         );
 
-        $country_data = $this->quandl_call->getSymbols($symbols_array, $parameters);
+        $country_data['population'] = $this->quandl_call->getSymbol('WORLDBANK/' . $this->countries[$country][1] . '_SP_POP_TOTAL', $parameters);
+        $country_data['tourists'] = $this->quandl_call->getSymbol('WORLDBANK/' . $this->countries[$country][1] . '_ST_INT_ARVL', $parameters);
+        $country_data['military'] = $this->quandl_call->getSymbol('WORLDBANK/' . $this->countries[$country][1] . '_MS_MIL_XPND_CN', $parameters);
+        $country_data['co2'] = $this->quandl_call->getSymbol('WORLDBANK/' . $this->countries[$country][1] . '_EN_ATM_CO2E_KT', $parameters);
+        $country_data['coal_energy'] = $this->quandl_call->getSymbol('WORLDBANK/' . $this->countries[$country][1] . '_EG_ELC_COAL_KH', $parameters);
+        $country_data['forests'] = $this->quandl_call->getSymbol('WORLDBANK/' . $this->countries[$country][1] . '_AG_LND_FRST_K2', $parameters);
+        $country_data['education'] = $this->quandl_call->getSymbol('WORLDBANK/' . $this->countries[$country][1] . '_SE_XPD_TOTL_GN_ZS', $parameters);
+        $country_data['gni'] = $this->quandl_call->getSymbol('WORLDBANK/' . $this->countries[$country][1] . '_NY_GNP_MKTP_CN', $parameters);
+
+        $symbols_array = array($population, $tourists, $military, $co2, $coal_enery, $forests, $education, $gni);
+
+        if ($country !== 'USA') {
+            $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][2], $parameters);
+        }
 
         return $country_data;
     }

@@ -149,7 +149,7 @@ header h1 {
     padding: 22px 5px;
     text-align: center;
     vertical-align: middle;
-    width: 83px;
+    width: 95px;
     transition: .3s;
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -160,15 +160,15 @@ header h1 {
 }
 .tourism {
 	color: #F44336;
-  	border: 2px #F44336 solid;
+  border: 2px #F44336 solid;
 }
 .tourism:hover {
 	background-color: #F44336;
-  	color: #fff
+  color: #fff
 }
 .military {
 	color: #56723D;
-  	border: 2px #56723D solid;
+  border: 2px #56723D solid;
 }
 .military:hover {
 	background-color: #56723D;
@@ -176,67 +176,52 @@ header h1 {
 }
 .co2 {
 	color: #2196F3;
-  	border: 2px #2196F3 solid;
+  border: 2px #2196F3 solid;
 }
 .co2:hover {
 	background-color: #2196F3;
-  	color: #fff
+  color: #fff
 }
 .pop {
 	color: #FF8000;
-  	border: 2px #FF8000 solid;
+  border: 2px #FF8000 solid;
+  padding: 30px 5px;
 }
 .pop:hover {
 	background-color: #FF8000;
-  	color: #fff
+  color: #fff
 }
 .violence {
 	color: #923059;
-  	border: 2px #923059 solid;
+  border: 2px #923059 solid;
 }
 .violence:hover {
 	background-color: #923059;
-  	color: #fff
+  color: #fff
 }
-.themeSix {
-	color: #F06292;
-  	border: 2px #F06292 solid;
+.forests {
+  color: #009688;
+  border: 2px #009688 solid;
 }
-.themeSix:hover {
-	background-color: #F06292;
-  	color: #fff
+.forests:hover {
+  background-color: #009688;
+  color: #fff
 }
-.themeSeven {
-	color: #FFC107;
-  	border: 2px #FFC107 solid;
+.education {
+  color: #607D8B;
+  border: 2px #607D8B solid;
 }
-.themeSeven:hover {
-	background-color: #FFC107;
-  	color: #fff
-}
-.themeEight {
-	color: #009688;
-  	border: 2px #009688 solid;
-}
-.themeEight:hover {
-	background-color: #009688;
-  	color: #fff
-}
-.themeNine {
-	color: #607D8B;
-  	border: 2px #607D8B solid;
-}
-.themeNine:hover {
-	background-color: #607D8B;
-  	color: #fff
+.education:hover {
+  background-color: #607D8B;
+  color: #fff
 }
 .themeTen {
-	color: #3F51B5;
-  	border: 2px #3F51B5 solid;
+  color: #3F51B5;
+  border: 2px #3F51B5 solid;
 }
 .themeTen:hover {
-	background-color: #3F51B5;
-  	color: #fff
+  background-color: #3F51B5;
+  color: #fff
 }
 #slideWrapper {
   margin: 30px auto;

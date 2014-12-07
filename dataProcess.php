@@ -65,11 +65,17 @@ foreach ($country_data['population'] as $population_year => $population_value) {
     }
 }
 
+unset($country_data['population']);
+unset($country_data['gni']);
+unset($country_data['exchange_usd']);
+
 foreach ($country_data as $country_theme_name => $country_theme_data) {
     foreach ($country_theme_data as $country_theme_year => $country_theme_year_value) {
         $finished_data[$country_theme_year][$country_theme_name] = $country_theme_year_value;
     }
 }
+
+unset($finished_data['1994']);
 
 echo "<pre>";
 var_dump($finished_data);

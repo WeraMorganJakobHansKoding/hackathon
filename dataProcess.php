@@ -12,8 +12,8 @@ $data_handler = new Data();
 $data_container = $data_handler->getCountryData($country);
 
 foreach ($data_container as $theme_name => $theme_properties) {
-    var_dump($theme_properties);
     foreach ($theme_properties['column_names'] as $column_titles_key => $column_titles_value) {
+        var_dump($column_titles_value);
         if ($column_titles_value === 'Value') {
             $theme_value_key = $column_titles_key;
         }

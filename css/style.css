@@ -224,6 +224,18 @@ header h1 {
   color: #fff
 }
 #slideWrapper {
-  margin: 30px auto;
+  margin: 30px auto 100px;
   width: 70%;
+}
+.oldTimes,
+.newTimes {
+  font-family: "Roboto",sans-serif;
+  color: #a5a5af;
+  margin-top: 10px;
+}
+.oldTimes {
+  float: left;
+}
+.newTimes {
+  float: right;
 }

@@ -31,19 +31,21 @@ foreach ($data_container as $theme_name => $theme_properties) {
     }
 }
 
-foreach ($country_data['military'] as $military_year => $military_value) {
-    if (isset($country_data['exchange_usd'][$military_year])) {
-        $country_data['military'][$military_year] = $military_value * $country_data['exchange_usd'][$military_year];
-    } else {
-        $country_data['military'][$military_year] = NULL;
+if ($country !== 'USA') {
+    foreach ($country_data['military'] as $military_year => $military_value) {
+        if (isset($country_data['exchange_usd'][$military_year])) {
+            $country_data['military'][$military_year] = $military_value * $country_data['exchange_usd'][$military_year];
+        } else {
+            $country_data['military'][$military_year] = NULL;
+        }
     }
-}
 
-foreach ($country_data['gni'] as $gni_year => $gni_value) {
-    if (isset($country_data['exchange_usd'][$gni_year])) {
-        $country_data['gni'][$gni_year] = $gni_value * $country_data['exchange_usd'][$gni_year];
-    } else {
-        $country_data['gni'][$gni_year] = NULL;
+    foreach ($country_data['gni'] as $gni_year => $gni_value) {
+        if (isset($country_data['exchange_usd'][$gni_year])) {
+            $country_data['gni'][$gni_year] = $gni_value * $country_data['exchange_usd'][$gni_year];
+        } else {
+            $country_data['gni'][$gni_year] = NULL;
+        }
     }
 }
 

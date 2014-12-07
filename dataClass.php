@@ -47,7 +47,8 @@ class Data
     {
         $parameters = array(
             'trim_start' => '1990',
-            'trim_end' => '2010'
+            'trim_end' => '2010',
+            'collapse' => 'annual'
         );
 
         $urls['population'] = 'WORLDBANK/' . $this->countries[$country][0] . '_SP_POP_TOTL';
@@ -59,7 +60,7 @@ class Data
         $urls['education'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
         $urls['gni'] = 'WORLDBANK/' . $this->countries[$country][0] . '_NY_GNP_MKTP_CN';
 
-        $country_data['population'] = $this->quandl_call->getSymbol($urls['population']);
+        $country_data['population'] = $this->quandl_call->getSymbol($urls['population'], $parameters);
         $country_data['tourists'] = $this->quandl_call->getSymbol($urls['tourists'], $parameters);
         $country_data['military'] = $this->quandl_call->getSymbol($urls['military'], $parameters);
         $country_data['co2'] = $this->quandl_call->getSymbol($urls['co2'], $parameters);
@@ -69,7 +70,7 @@ class Data
         $country_data['gni'] = $this->quandl_call->getSymbol($urls['gni'], $parameters);
 
         if ($country !== 'USA') {
-            $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][1]);
+            $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][1], $parameters);
         }
 
         if ($this->quandl_call->error) {

@@ -111,7 +111,7 @@ class Quandl {
 		if($this->cache_handler == null) {
 			$data = @file_get_contents($url);
 			if(!$data)
-				$this->error = "Invalid URL";
+				$this->error = "Invalid URLa";
 		}
 		else {
 			$data = $this->attemptGetFromCache($url);
@@ -134,7 +134,7 @@ class Quandl {
 			if($data)
 				call_user_func($this->cache_handler, "set", $url, $data);
 			else 
-				$this->error = "Invalid URL";
+				$this->error = "Invalid URLb";
 		}
 
 		return $data;

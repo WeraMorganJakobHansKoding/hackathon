@@ -40,7 +40,7 @@ class Data
         require('lib/quandl/Quandl.php');
 
         $this->quandl_call = new Quandl($quandl_api_token);
-        $this->quandl_call->cache_handler = 'dataCache';
+        //$this->quandl_call->cache_handler = 'dataCache';
     }
 
     function getCountryData($country)
@@ -70,9 +70,9 @@ class Data
         $country_data['education'] = $this->quandl_call->getSymbol($urls['education'], $parameters);
         $country_data['gni'] = $this->quandl_call->getSymbol($urls['gni'], $parameters);
 
-        /*if ($country !== 'USA') {
+        if ($country !== 'USA') {
             $country_data['exchange_usd'] = $this->quandl_call->getSymbol('CURRFX/USD' . $this->countries[$country][1], $parameters);
-        }*/
+        }
 
         if ($this->quandl_call->error) {
             echo $this->quandl_call->error . " - " . $this->quandl_call->last_url;

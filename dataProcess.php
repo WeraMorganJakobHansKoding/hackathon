@@ -2,10 +2,9 @@
 
 require('dataClass.php');
 
-$new_call = new Data();
-
 echo "<pre>";
-var_dump($new_call->getCountryData('Mexico'));
+$data_object = new Data();
+var_dump($data_object->getCountryData('Argentina'));
 echo "</pre>";
 
 ?>

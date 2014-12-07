@@ -40,14 +40,14 @@ class Data
         require('lib/quandl/Quandl.php');
 
         $this->quandl_call = new Quandl($quandl_api_token);
-        //$this->quandl_call->cache_handler = 'dataCache';
+        $this->quandl_call->cache_handler = 'dataCache';
     }
 
     function getCountryData($country)
     {
         $parameters = array(
-            'trim_start' => '1990-12-31',
-            'trim_end' => '2010-12-31'
+            'trim_start' => '1990',
+            'trim_end' => '2010'
         );
 
         $urls['population'] = 'WORLDBANK/' . $this->countries[$country][0] . '_SP_POP_TOTL';

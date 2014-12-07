@@ -39,6 +39,8 @@ class Data
         require('accounts.php');
         require('lib/quandl/Quandl.php');
 
+        echo $quandl_api_token;
+
         $this->quandl_call = new Quandl($quandl_api_token);
         //$this->quandl_call->cache_handler = 'dataCache';
     }

@@ -10,24 +10,32 @@
 		<meta name="author" content="">
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" language="javascript" src="js/dynamics.js"></script>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		 <script>
+			$(function() {
+				$( "#slider" ).slider();
+			});
+		</script>
 	</head>
 	<body>
 		<div id="mainContainer">
 			<header>
 				<h1>An awesome name here</h1>
-				<div id="changeCountry">
-					<a href="#">
+				<a href="#">
+					<div id="changeCountry" class="chg">
 						<img src="img/arrowDown.png"/>
 						<p>Change country</p>
-					</a>
-				</div><div class="clear"></div>
+					</div><div class="clear"></div>
+				</a>
 			</header>
 
-			<!-- COUNTRY BOX -->
+			<!-- COUNTRY BOX 
 
 			<div id="countryBox">
 				<div class="countryTxt">
@@ -66,12 +74,12 @@
 					<br>
 					<ul>
 						<li><h2>ASIA</h2></li>
-						<li><a href="#" title="">Arab Emirates</a></li>
 						<li><a href="#" title="">China</a></li>
 						<li><a href="#" title="">India</a></li>
 						<li><a href="#" title="">Israel</a></li>
 						<li><a href="#" title="">Japan</a></li>
 						<li><a href="#" title="">Pakistan</a></li>
+						<li><a href="#" title="">Saudi Arabia</a></li>
 						<li><a href="#" title="">Tailand</a></li>
 					</ul>
 					<br>
@@ -80,7 +88,7 @@
 						<li><a href="#" title="">Australia</a></li>
 					</ul>
 				</div>
-			</div> 
+			</div> -->
 
 			<div id="tileBox">
 				<div class="tile" id="coral">
@@ -173,14 +181,12 @@
 				</a>
 			</div>
 
-			<!-- SLIDING TIMELINE 
+			<!-- SLIDING TIMELINE -->
 
 			<div id="slideWrapper">
-				<div id="nineties">1990</div>
-				<div id="twentyTen">2010</div>
+				<div id="slider"></div>
 			</div>
 		
-			-->
 		</div>
 	</body>
 </html>

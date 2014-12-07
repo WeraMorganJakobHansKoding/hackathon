@@ -62,7 +62,7 @@ header h1 {
     margin-left: 1%;
     color: #DDD;
 }
-#changeCountry a:hover {
+.chg:hover {
 	color: #2196F3;
 }
 
@@ -237,4 +237,8 @@ header h1 {
 .themeTen:hover {
 	background-color: #3F51B5;
   	color: #fff
+}
+#slideWrapper {
+  margin: 30px auto;
+  width: 70%;
 }

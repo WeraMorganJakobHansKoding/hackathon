@@ -24,7 +24,7 @@ $(document).ready(function() {
             $('body').loadingOverlay('remove');
             $('#tilesWrapper').empty().append(data);
             $('.year' + $('#slider').slider("value")).slideDown();
-            $('#countryTitle').text($(this).text());
+            $('h3#countryTitle').text($(this).text());
         });
 
         return false;

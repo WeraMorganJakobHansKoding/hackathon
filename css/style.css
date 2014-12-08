@@ -224,6 +224,7 @@ footer img {
   margin: 0 auto;
   text-align: center;
   margin: 50px auto 20px;
+  display: none;
 } 
 .lib {
   display: inline-block;

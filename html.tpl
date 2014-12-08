@@ -140,7 +140,11 @@
 				<div class="oldTimes">1995</div>
 				<div class="newTimes">2010</div>
 			</div>
-		
+			<footer>
+				<p>This project was created by two amazing mexicans: <a href="http://twitter.com/jakobhans" title="Follow me!" target="_blank"><strong>Jakob Hans Renpening</strong></a> and <a href="http://twitter.com/faith_k_a" title="Follow me!" target="_blank"><strong>Andrea Sánchez</strong></a>.
+				<br><br>
+				We would like to mention this app was born to participate in the <a href="http://koding.com/Hackathon" target="_blank">WORLD’S FIRST GLOBAL VIRTUAL HACKATHON</a> by <a href="http://koding.com" target="_blank"><img src="img/koding-logo.png"></a></p>
+			</footer>
 		</div>
 	</body>
 </html>

@@ -103,6 +103,9 @@ header h1 {
 
 /* ================ */
 
+.yearWrapper {
+    display:none;
+}
 #tileBox {
 	width: 90%;
 	margin: 0 auto;

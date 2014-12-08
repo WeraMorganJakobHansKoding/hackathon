@@ -113,11 +113,11 @@ header h1 {
 }
 .tile {
 	display: inline-block;
-  height: 170px;
-  padding: 1%;
-  vertical-align: top;
-  width: 170px;
-  margin-bottom: 4px;
+   height: 190px;
+   margin-bottom: 4px;
+   padding: 1%;
+   vertical-align: top;
+   width: 143px;
 }
 .tile p {
 	color: #fff;

@@ -1,7 +1,7 @@
 
 # Our awesome name here
 
-[![Hackathon Bagde](/img/badge.png)](http://github.com)
+[![Hackathon Bagde](/img/badge.png)](http://koding.com/Hackathon)
 
 # Our project
 

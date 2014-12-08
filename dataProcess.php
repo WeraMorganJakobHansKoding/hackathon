@@ -1,6 +1,7 @@
 <?php
 
 require('dataClass.php');
+require('lib/smarty/libs/Smarty.class.php');
 
 if (isset($_GET['c'])) {
     $country = $_GET['c'];
@@ -68,7 +69,6 @@ foreach ($country_data['population'] as $population_year => $population_value) {
 }
 
 unset($country_data['population']);
-unset($country_data['gni']);
 unset($country_data['exchange_usd']);
 
 foreach ($country_data as $country_theme_name => $country_theme_data) {
@@ -78,5 +78,12 @@ foreach ($country_data as $country_theme_name => $country_theme_data) {
 }
 
 unset($finished_data['1994']);
+
+$content_template = new Smarty();
+
+$content_template->assign('data', $finished_data);
+$content_html = $content_template->fetch('tiles.tpl');
+
+echo $content_html;
 
 ?>

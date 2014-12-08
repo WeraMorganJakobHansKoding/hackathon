@@ -14,9 +14,9 @@ We think is a big deal nowadays to use every chance we've got to create awarenes
 
 # APIs we used
 
-[http://quandl.com](http://quandl.com)
-[http://github.com/DannyBen/php-quandl](http://github.com/DannyBen/php-quandl)
-[http://jqueryui.com](http://jqueryui.com)
-[http://jquery.com](http://jquery.com)
-[http://smarty.net](http://smarty.net)
+* [http://quandl.com](http://quandl.com)
+* [http://github.com/DannyBen/php-quandl](http://github.com/DannyBen/php-quandl)
+* [http://jqueryui.com](http://jqueryui.com)
+* [http://jquery.com](http://jquery.com)
+* [http://smarty.net](http://smarty.net)
 

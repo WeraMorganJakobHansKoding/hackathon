@@ -1,30 +1,24 @@
 {foreach $data as $year}
 <div id="tileBox" class="yearWrapper year{$year@key}">
-	<div class="tile" id="coral">
+	<div class="tile coral co2" id="coral">
 		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
 	</div>
-	<div class="tile" id="green">
+	<div class="tile green military" id="">
 		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
 	</div>
-	<div class="tile" id="baby">
+	<div class="tile baby education" id="">
 		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
 	</div>
-	<div class="tile" id="orange">
+	<div class="tile orange population" id="">
 		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
 	</div>
-	<div class="tile" id="pink">
+	<div class="tile pink tourism" id="">
 		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
 	</div>
-	<div class="tile" id="yellow">
+	<div class="tile yellow coal" id="">
 		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
 	</div>
-	<div class="tile" id="teal">
-		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
-	</div>
-	<div class="tile" id="fiusha">
-		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
-	</div>
-	<div class="tile" id="gray">
+	<div class="tile teal forests" id="teal">
 		<p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
 	</div>
 </div>

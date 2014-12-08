@@ -82,6 +82,10 @@ foreach ($country_data['population'] as $population_year => $population_value) {
     }
 }
 
+foreach ($country_data['co2'] as $co2_year => $co2_value) {
+    $country_data['co2'][$co2_year] = $co2_value * 1000;
+}
+
 unset($country_data['population']);
 unset($country_data['forests']);
 unset($country_data['exchange_usd']);

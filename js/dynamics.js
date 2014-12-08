@@ -11,6 +11,7 @@ $(document).ready(function() {
                 $('.activeTile').removeClass('activeTile');
                 $('.year' + ui.value).addClass('activeTile');
                 $('.year' + ui.value).fadeIn();
+                startPulse();
             });
         }
     });
@@ -37,6 +38,10 @@ $(document).ready(function() {
 
     $('.countries_toggle_button').click(function() {
         $('#countryBox').slideToggle();
+    });
+
+    $('#frameworks_menu').click(function() {
+        $('#libWrap').slideToggle();
     });
 
 });

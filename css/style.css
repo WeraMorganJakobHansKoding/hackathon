@@ -182,7 +182,8 @@ header h1 {
    font-family: "Open Sans",sans-serif;
    font-size: 1.3em;
    font-weight: bold;
-   margin-bottom: 5px;
+   margin: 0 auto 5px;
+   width: 50px;
 }
 
 /* === FOOTER === */

@@ -11,6 +11,8 @@ $(document).ready(function() {
     });
 
     $('.country_link').click(function() {
+        $('.countryBox').slideToggle();
+
         var country = $(this).attr('data-country');
         $.ajax({
             url: "http://jakobhans.koding.io/dataProcess.php?c=" + country,

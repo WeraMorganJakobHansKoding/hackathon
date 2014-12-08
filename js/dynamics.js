@@ -4,10 +4,10 @@ $(document).ready(function() {
         max: 2010,
         value: 2010,
         slide: function(event, ui) {
-            $('div#currentTimes').text(ui.value);
+            console.log(ui.value);
         },
         change: function(event, ui) {
-            alert(ui.value);
+            console.log(ui.value);
         }
     });
 });

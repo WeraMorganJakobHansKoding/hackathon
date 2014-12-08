@@ -14,7 +14,8 @@ $(document).ready(function() {
     });
 
     $('.country_link').click(function() {
-        $('#countryBox').slideToggle();
+        $('#countryBox').slideToggle('fast');
+        $('#popover_loading').popup();
 
         var country = $(this).attr('data-country');
         $.ajax({

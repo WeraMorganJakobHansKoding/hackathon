@@ -14,9 +14,8 @@ $(document).ready(function() {
         var country = $(this).attr('data-country');
         $.ajax({
             url: "http://jakobhans.koding.com/dataProcess.php?c=" + country,
-            done(function(data) {
-                $('#tilesWrapper').empty().append(data);
-            })
+        }).done(function(data) {
+            $('#tilesWrapper').empty().append(data);
         });
     });
 });

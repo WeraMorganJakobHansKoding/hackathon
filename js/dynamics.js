@@ -21,7 +21,7 @@ $(document).ready(function() {
             url: "http://jakobhans.koding.io/dataProcess.php?c=" + country,
         }).done(function(data) {
             $('#tilesWrapper').empty().append(data);
-            $('.year' + $('#slider').slider("value")).show();
+            $('.year' + $('#slider').slider("value")).slideDown();
         });
 
         return false;

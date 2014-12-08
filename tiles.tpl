@@ -7,12 +7,12 @@
 	</div>
 	<div class="tile green military" id="">
         <p class="tile_title">{$year.military.title}</p>
-        <p class="tile_total">USD${$year.military.value}</p> 
+        <p class="tile_total">{$year.military.value}</p> 
         <p class="tile_qty">USD$1,000 every {$year.military.lapse} seconds</p>
 	</div>
 	<div class="tile baby education" id="">
         <p class="tile_title">{$year.education.title}</p>
-        <p class="tile_total">{$year.education.value} kT CO2k</p> 
+        <p class="tile_total">{$year.education.value}</p> 
         <p class="tile_qty">USD$1,000 every {$year.education.lapse} seconds</p>
 	</div>
 	<div class="tile orange population" id="">
@@ -26,9 +26,9 @@
         <p class="tile_qty">5 tourists every {$year.tourism.lapse} seconds</p>
 	</div>
 	<div class="tile yellow coal" id="">
-        <p class="tile_title">{$year.coal.title}</p>
-        <p class="tile_total">{$year.coal.value} kT CO2k</p> 
-        <p class="tile_qty">100,000 kWh every {$year.coal.lapse} seconds</p>
+        <p class="tile_title">{$year.coal_energy.title}</p>
+        <p class="tile_total">{$year.coal_energy.value} kT CO2k</p> 
+        <p class="tile_qty">100,000 kWh every {$year.coal_energy.lapse} seconds</p>
 	</div>
 	<div class="tile teal forests" id="teal">
         <p class="tile_title">{$year.forests_growth.title}</p>

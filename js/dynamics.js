@@ -4,7 +4,7 @@ $(document).ready(function() {
         max: 2010,
         value: 2010,
         slide: function(event, ui) {
-            $('div#currentTimes').html(ui.value);
+            $('div#currentTimes').text(ui.value);
         },
         change: function(event, ui) {
             alert(ui.value);

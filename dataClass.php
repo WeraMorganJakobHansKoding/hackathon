@@ -31,7 +31,8 @@ class Data
         'Israel' => array('ISR', 'ILS'),
         'SouthAfrica' => array('ZAF', 'ZAR'),
         'Nigeria' => array('NGA', 'NGN'), 
-        'Cameroon' => array('CMR', 'XAF')
+        'Cameroon' => array('CMR', 'XAF'),
+        'Australia' => array('AUS', 'AUD')
     ); 
 
     function __construct()

@@ -1,4 +1,5 @@
 <?php
+error_reporting('E_ALL');
 
 require('dataClass.php');
 require('lib/smarty/libs/Smarty.class.php');

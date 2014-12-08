@@ -26,6 +26,6 @@ $(document).ready(function() {
 
     $('.countries_toggle_button').click(function() {
         $('#countryBox').slideToggle();
-    }
+    });
 
 });

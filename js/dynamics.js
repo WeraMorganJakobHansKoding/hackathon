@@ -23,4 +23,9 @@ $(document).ready(function() {
 
         return false;
     });
+
+    $('.countries_toggle_button').click(function() {
+        $('#countryBox').slideToggle();
+    }
+
 });

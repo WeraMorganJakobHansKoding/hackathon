@@ -17,6 +17,7 @@ $(document).ready(function() {
         $('#countryBox').slideToggle('fast');
         $('body').loadingOverlay();
 
+        var countryName = $(this).text();
         var country = $(this).attr('data-country');
         $.ajax({
             url: "http://jakobhans.koding.io/dataProcess.php?c=" + country,
@@ -24,7 +25,7 @@ $(document).ready(function() {
             $('body').loadingOverlay('remove');
             $('#tilesWrapper').empty().append(data);
             $('.year' + $('#slider').slider("value")).slideDown();
-            $('h3#countryTitle').text($(this).text());
+            $('h3#countryTitle').text(countryName);
         });
 
         return false;

@@ -81,8 +81,9 @@ unset($finished_data['1994']);
 
 
 $content_template = new Smarty();
-/*
+
 $content_template->assign('data', $finished_data);
+/*
 $content_html = $content_template->fetch('tiles.tpl');
  */
 echo $finished_data;

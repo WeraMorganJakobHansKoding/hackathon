@@ -231,20 +231,26 @@ header h1 {
 }
 */
 #slideWrapper {
-  margin: 30px auto 100px;
-  width: 70%;
+   margin: 30px auto 100px;
+   width: 70%;
 }
 .oldTimes,
 .newTimes {
-  font-family: 'Open Sans', sans-serif;
-  color: #a5a5af;
-  margin-top: 10px;
+   font-family: 'Open Sans', sans-serif;
+   color: #a5a5af;
+   margin-top: 10px;
 }
 .oldTimes {
-  float: left;
+   float: left;
 }
 .newTimes {
-  float: right;
+   float: right;
+}
+#slider_current {
+   font-family: 'Open Sans', sans-serif;
+   color: #2196f3;
+   font-size: 1.5em;
+   margin-bottom: 5px;
 }
 
 /* === FOOTER === */

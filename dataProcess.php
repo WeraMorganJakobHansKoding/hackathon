@@ -125,7 +125,8 @@ foreach ($country_data as $country_theme_name => $country_theme_data) {
             $finished_data[$country_theme_year][$country_theme_name]['lapse'] = (1000 * 31536000) / $finished_data[$country_theme_year][$country_theme_name]['value'];
             break;
         }
-        $finished_data[$country_theme_year][$country_theme_name]['lapse'] = number_format($finished_data[$country_theme_year][$country_theme_name]['lapse'], 2, '.', ',');
+        $finished_data[$country_theme_year][$country_theme_name]['lapse'] = number_format($finished_data[$country_theme_year][$country_theme_name]['lapse'], 2, '.', '');
+        $finished_data[$country_theme_year][$country_theme_name]['value'] = number_format($finished_data[$country_theme_year][$country_theme_name]['value'], 2, '.', ',');
     }
 }
 

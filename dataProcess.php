@@ -114,7 +114,7 @@ foreach ($country_data as $country_theme_name => $country_theme_data) {
             break;
         case 'co2':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'CO2 Emissions';
-            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = (100 * 31536000) / (1000 * $finished_data[$country_theme_year][$country_theme_name]['value']);
+            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = 31536000 / $finished_data[$country_theme_year][$country_theme_name]['value'];
             break;
         case 'coal_energy':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Energy from coal';

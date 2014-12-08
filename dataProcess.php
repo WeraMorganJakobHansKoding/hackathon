@@ -67,7 +67,7 @@ foreach ($country_data['forests'] as $forests_year => $forests_value) {
 
 foreach ($country_data['education'] as $education_year => $education_value) {
     if (isset($country_data['gni'][$education_year])) {
-        $country_data['education'][$education_year] = $education_value * $country_data['gni'][$education_year];
+        $country_data['education'][$education_year] = ($education_value / 100) * $country_data['gni'][$education_year];
     } else {
         $country_data['education'][$education_year] = NULL;
     }

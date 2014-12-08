@@ -123,10 +123,6 @@ $content_template = new Smarty();
 $content_template->assign('data', $finished_data);
 $content_html = $content_template->fetch('tiles.tpl');
 
-//echo $content_html;
-
-echo "<pre>";
-var_dump($finished_data);
-echo "</pre>";
+echo $content_html;
 
 ?>

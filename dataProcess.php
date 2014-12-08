@@ -1,6 +1,8 @@
 <?php
+/*
 error_reporting(-1);
 ini_set('display_errors', 1);
+ */
 
 require('dataClass.php');
 require('lib/smarty/libs/Smarty.class.php');
@@ -87,6 +89,6 @@ $content_template = new Smarty();
 $content_template->assign('data', $finished_data);
 $content_html = $content_template->fetch('tiles.tpl');
 
-echo $finished_data;
+echo $content_html;
 
 ?>

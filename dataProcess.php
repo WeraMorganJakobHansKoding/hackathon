@@ -1,8 +1,8 @@
 <?php
-/*
+
 error_reporting(-1);
 ini_set('display_errors', 1);
- */
+
 
 require('dataClass.php');
 require('lib/smarty/libs/Smarty.class.php');

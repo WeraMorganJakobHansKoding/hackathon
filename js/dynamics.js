@@ -5,6 +5,7 @@ $(document).ready(function() {
         value: 2010,
         slide: function(event, ui) {
             console.log(ui.value);
+            $('div#slider_current').text(ui.value);
         },
         change: function(event, ui) {
             console.log(ui.value);

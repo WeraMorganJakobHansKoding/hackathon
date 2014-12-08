@@ -54,6 +54,16 @@ if ($country !== 'USA') {
     }
 }
 
+foreach ($country_data['forests'] as $forests_year => $forests_value) {
+    $year_int = intval($forests_year);
+    $previous_year = (string) $year_int - 1;
+    if (isset($country_data['forests'][$previous_year])) {
+        $country_data['forests_growth'][$forests_year] = $forests_value - $country_data['forests'][$previous_year];
+    } else {
+        $country_data['forests_growth'][$forests_year] = NULL;
+    }
+} 
+
 foreach ($country_data['education'] as $education_year => $education_value) {
     if (isset($country_data['gni'][$education_year])) {
         $country_data['education'][$education_year] = $education_value * $country_data['gni'][$education_year];
@@ -64,7 +74,7 @@ foreach ($country_data['education'] as $education_year => $education_value) {
 
 foreach ($country_data['population'] as $population_year => $population_value) {
     $year_int = intval($population_year);
-    $previous_year = (int) $year_int - 1;
+    $previous_year = (string) $year_int - 1;
     if (isset($country_data['population'][$previous_year])) {
         $country_data['population_growth'][$population_year] = $population_value - $country_data['population'][$previous_year];
     } else {
@@ -73,11 +83,35 @@ foreach ($country_data['population'] as $population_year => $population_value) {
 }
 
 unset($country_data['population']);
+unset($country_data['forests']);
 unset($country_data['exchange_usd']);
 
 foreach ($country_data as $country_theme_name => $country_theme_data) {
     foreach ($country_theme_data as $country_theme_year => $country_theme_year_value) {
-        $finished_data[$country_theme_year][$country_theme_name] = $country_theme_year_value;
+        $finished_data[$country_theme_year][$country_theme_name]['value'] = $country_theme_year_value;
+        switch($country_theme_name) {
+        case 'military':
+            $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Military expenditure';
+            break;
+        case 'population_growth':
+            $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Population explosion';
+            break;
+        case 'forests':
+            $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Forests area';
+            break;
+        case 'tourists':
+            $finished_data[$country_theme_year][$country_theme_name]['title'] = 'International tourism';
+            break;
+        case 'co2':
+            $finished_data[$country_theme_year][$country_theme_name]['title'] = 'CO2 Emissions';
+            break;
+        case 'coal_energy':
+            $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Energy from coal';
+            break;
+        case 'education':
+            $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Education expenditure';
+            break;
+        }
     }
 }
 

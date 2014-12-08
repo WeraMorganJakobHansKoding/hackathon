@@ -96,26 +96,34 @@ foreach ($country_data as $country_theme_name => $country_theme_data) {
         switch($country_theme_name) {
         case 'military':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Military expenditure';
+            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = (1000 * 31536000) / $finished_data[$country_theme_year][$country_theme_name]['value'];
             break;
         case 'population_growth':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Population explosion';
+            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = 31536000 / $finished_data[$country_theme_year][$country_theme_name]['value'];
             break;
         case 'forests_growth':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Forests area';
+            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = (1000 * 31536000) / ($finished_data[$country_theme_year][$country_theme_name]['value'] * 1000000);
             break;
         case 'tourists':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'International tourism';
+            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = (5* 31536000) / $finished_data[$country_theme_year][$country_theme_name]['value'];
             break;
         case 'co2':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'CO2 Emissions';
+            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = (100 * 31536000) / (1000 * $finished_data[$country_theme_year][$country_theme_name]['value']);
             break;
         case 'coal_energy':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Energy from coal';
+            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = (100000 * 31536000) / $finished_data[$country_theme_year][$country_theme_name]['value'];
             break;
         case 'education':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Education expenditure';
+            $finished_data[$country_theme_year][$country_theme_name]['lapse'] = (1000 * 31536000) / $finished_data[$country_theme_year][$country_theme_name]['value'];
             break;
         }
+        $finished_data[$country_theme_year][$country_theme_name]['lapse'] = number_format($finished_data[$country_theme_year][$country_theme_name]['lapse'], 2, '.', '');
     }
 }
 

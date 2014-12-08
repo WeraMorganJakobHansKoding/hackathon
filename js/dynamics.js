@@ -7,7 +7,9 @@ $(document).ready(function() {
             $('div#slider_current').text(ui.value);
         },
         change: function(event, ui) {
-            $('.yearWrapper').fadeOut(400, function() {
+            $('.activeTile').fadeOut(400, function() {
+                $('.activeTile').removeClass('activeTile');
+                $('.year' + ui.value).addClass('activeTile');
                 $('.year' + ui.value).fadeIn();
             });
         }
@@ -25,6 +27,7 @@ $(document).ready(function() {
             $('div#overlay').fadeOut();
             $('#tilesWrapper').empty().append(data);
             $('.year' + $('#slider').slider("value")).slideDown();
+            $('.year' + $('#slider').slider("value")).addClass('activeTile');
             $('h3#countryTitle').text(countryName);
         });
 

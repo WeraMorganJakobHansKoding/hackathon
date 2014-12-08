@@ -96,7 +96,7 @@ foreach ($country_data as $country_theme_name => $country_theme_data) {
         case 'population_growth':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Population explosion';
             break;
-        case 'forests':
+        case 'forests_growth':
             $finished_data[$country_theme_year][$country_theme_name]['title'] = 'Forests area';
             break;
         case 'tourists':
@@ -123,6 +123,10 @@ $content_template = new Smarty();
 $content_template->assign('data', $finished_data);
 $content_html = $content_template->fetch('tiles.tpl');
 
-echo $content_html;
+//echo $content_html;
+
+echo "<pre>";
+var_dump($finished_data);
+echo "</pre>";
 
 ?>

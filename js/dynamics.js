@@ -44,7 +44,7 @@ $(document).ready(function() {
 function startPulse() {
     var tiles = $('.activeTile').children('.tile');
     $(tiles).each(function() {
-        var pulseRate = parseFloat($(this).attr('data-lapse'));
-        $(this).effect("pulsate", {times:1000}, pulseRate);
+        var pulseRate = parseFloat($(this).attr('data-lapse')) * 10000000;
+        $(this).effect("pulsate", {times:10000}, pulseRate);
     });
 }

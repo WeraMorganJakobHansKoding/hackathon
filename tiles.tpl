@@ -2,7 +2,7 @@
 <div id="tileBox" class="yearWrapper year{$year@key}">
 	<div class="tile coral co2" id="" data-lapse="{$year.co2.lapse}">
 		<p class="tile_title">{$year.co2.title}</p>
-        <p class="tile_total">{$year.co2.value} kT CO2k</p> 
+        <p class="tile_total">{$year.co2.value} kT CO2</p> 
         <p class="tile_qty">100 tons every {$year.co2.lapse} seconds</p>
 	</div>
 	<div class="tile green military" id="">

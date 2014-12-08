@@ -121,11 +121,14 @@ header h1 {
 }
 .tile p {
 	color: #fff;
-  font-size: 0.95em;
-  font-weight: 400;
-  margin: 15px auto 0;
-  text-align: center;
-  width: 90%;
+   font-size: 0.95em;
+   font-weight: 400;
+   margin: 15px auto 0;
+   text-align: center;
+   width: 90%;
+}
+.tile p.tile_total {
+   font-size: 0.9em;
 }
 .coral { background-color: #F44336; }
 .green { background-color: #4CAF50; }
@@ -160,6 +163,7 @@ header h1 {
 .theme p {
 	font-size: 0.9em;
 }
+/*
 .tourism {
 	color: #F44336;
   border: 2px #F44336 solid;
@@ -225,6 +229,7 @@ header h1 {
   background-color: #3F51B5;
   color: #fff
 }
+*/
 #slideWrapper {
   margin: 30px auto 100px;
   width: 70%;

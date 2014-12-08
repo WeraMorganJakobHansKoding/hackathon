@@ -4,11 +4,19 @@ $(document).ready(function() {
         max: 2010,
         value: 2010,
         slide: function(event, ui) {
-            console.log(ui.value);
             $('div#slider_current').text(ui.value);
         },
         change: function(event, ui) {
-            console.log(ui.value);
         }
+    });
+
+    $('.country_link').click(function() {
+        var country = $(this).attr('data-country');
+        $.ajax({
+            url: "http://jakobhans.koding.com/dataProcess.php?c=" + country,
+            done(function(data) {
+                $('#tilesWrapper').empty().append(data);
+            }
+        });
     });
 });

@@ -21,9 +21,9 @@
         <p class="tile_qty">1 person every {$year.population_growth.lapse} seconds</p>
 	</div>
 	<div class="tile pink tourism" id="">
-        <p class="tile_title">{$year.tourism.title}</p>
-        <p class="tile_total">{$year.tourism.value} international tourists</p> 
-        <p class="tile_qty">5 tourists every {$year.tourism.lapse} seconds</p>
+        <p class="tile_title">{$year.tourists.title}</p>
+        <p class="tile_total">{$year.tourists.value} international tourists</p> 
+        <p class="tile_qty">5 tourists every {$year.tourists.lapse} seconds</p>
 	</div>
 	<div class="tile yellow coal" id="">
         <p class="tile_title">{$year.coal_energy.title}</p>

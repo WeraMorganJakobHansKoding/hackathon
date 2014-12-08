@@ -147,6 +147,7 @@
 				<br><br>
 				<a class="link" href="http://koding.com/Hackathon" target="_blank">koding.com/Hackathon</a>
 				<br><br>
+				This is our public repository, please feel free to fork it!<br><br>
 				<a href="http://git.io/XPCjGA" target="_blank" class="link">http://git.io/XPCjGA</a> 
 				</p>
 			</footer>

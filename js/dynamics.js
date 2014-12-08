@@ -29,6 +29,7 @@ $(document).ready(function() {
             $('.year' + $('#slider').slider("value")).slideDown();
             $('.year' + $('#slider').slider("value")).addClass('activeTile');
             $('h3#countryTitle').text(countryName);
+            startPulse();
         });
 
         return false;
@@ -39,3 +40,11 @@ $(document).ready(function() {
     });
 
 });
+
+function startPulse() {
+    var tiles = $('.activeTile').children('.tile');
+    $(tiles).each(function() {
+        var pulseRate = parseFloat($(this).attr('data-lapse')) * 1000;
+        $(this).effect("pulsate", {times:1000}, pulseRate);
+    });
+}

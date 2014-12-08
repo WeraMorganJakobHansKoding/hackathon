@@ -8,12 +8,12 @@
 	<div class="tile green military" id="">
         <p class="tile_title">{$year.military.title}</p>
         <p class="tile_total">USD${$year.military.value}</p> 
-        <p class="tile_qty">USD$5,000 every {$year.military.lapse} seconds</p>
+        <p class="tile_qty">USD$20,000 every {$year.military.lapse} seconds</p>
 	</div>
 	<div class="tile baby education" id="">
         <p class="tile_title">{$year.education.title}</p>
         <p class="tile_total">USD${$year.education.value}</p> 
-        <p class="tile_qty">USD$5,000 every {$year.education.lapse} seconds</p>
+        <p class="tile_qty">USD$20,000 every {$year.education.lapse} seconds</p>
 	</div>
 	<div class="tile orange population" id="">
         <p class="tile_title">{$year.population_growth.title}</p>

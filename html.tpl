@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>

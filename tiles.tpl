@@ -33,7 +33,11 @@
 	<div class="tile teal forests" id="teal">
         <p class="tile_title">{$year.forests_growth.title}</p>
         <p class="tile_total">{$year.forests_growth.value} km2</p> 
-        <p class="tile_qty">500 m2 every {$year.forests_growth.lapse} seconds</p>
+        {if $year.forests_growth.lapse < 0}
+        <p class="tile_qty">500 m2 lost every {-1 * $year.forests_growth.lapse} seconds</p>
+        {else}
+        <p class="tile_qty">500 m2 regained every {$year.forests_growth.lapse} seconds</p>
+        {/if}
 	</div>
 </div>
 {/foreach}

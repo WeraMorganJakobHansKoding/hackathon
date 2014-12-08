@@ -1,5 +1,5 @@
 
-# Our awesome name here
+![infoBeats logo](/img/infoBeats-logo.png)
 
 [![Hackathon Bagde](/img/badge.png)](http://koding.com/Hackathon)
 

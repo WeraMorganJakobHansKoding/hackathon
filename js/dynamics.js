@@ -4,4 +4,4 @@ $(document).ready(function() {
         max: 2010,
         step: 16
     });
-}
+});

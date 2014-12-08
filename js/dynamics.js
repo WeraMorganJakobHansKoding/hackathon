@@ -15,13 +15,13 @@ $(document).ready(function() {
 
     $('.country_link').click(function() {
         $('#countryBox').slideToggle('fast');
-        $(window).loadingOverlay();
+        $('#mainContainer').loadingOverlay();
 
         var country = $(this).attr('data-country');
         $.ajax({
             url: "http://jakobhans.koding.io/dataProcess.php?c=" + country,
         }).done(function(data) {
-            $(window).loadingOverlay('remove');
+            $('#mainContainer').loadingOverlay('remove');
             $('#tilesWrapper').empty().append(data);
             $('.year' + $('#slider').slider("value")).slideDown();
         });

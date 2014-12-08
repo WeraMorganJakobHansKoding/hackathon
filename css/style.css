@@ -113,19 +113,19 @@ header h1 {
 }
 .tile {
 	display: inline-block;
-    height: 170px;
-    padding: 1%;
-    vertical-align: top;
-    width: 170px;
-    margin-bottom: 4px;
+  height: 170px;
+  padding: 1%;
+  vertical-align: top;
+  width: 170px;
+  margin-bottom: 4px;
 }
 .tile p {
 	color: #fff;
-    font-size: 1.3em;
-    font-weight: 300;
-    margin: 32px auto 0;
-    text-align: center;
-    width: 90%;
+  font-size: 0.95em;
+  font-weight: 400;
+  margin: 15px auto 0;
+  text-align: center;
+  width: 90%;
 }
 .coral { background-color: #F44336; }
 .green { background-color: #4CAF50; }

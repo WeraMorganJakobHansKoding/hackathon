@@ -7,6 +7,9 @@ $(document).ready(function() {
             $('div#slider_current').text(ui.value);
         },
         change: function(event, ui) {
+            $('.yearWrapper').fadeOut(400, function() {
+                $('.year' + ui.value).fadeIn();
+            });
         }
     });
 

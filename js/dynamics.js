@@ -17,5 +17,7 @@ $(document).ready(function() {
         }).done(function(data) {
             $('#tilesWrapper').empty().append(data);
         });
+
+        return false;
     });
 });

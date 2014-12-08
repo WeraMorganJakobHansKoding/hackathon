@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('.country_link').click(function() {
         var country = $(this).attr('data-country');
         $.ajax({
-            url: "http://jakobhans.koding.com/dataProcess.php?c=" + country,
+            url: "http://jakobhans.koding.io/dataProcess.php?c=" + country,
         }).done(function(data) {
             $('#tilesWrapper').empty().append(data);
         });

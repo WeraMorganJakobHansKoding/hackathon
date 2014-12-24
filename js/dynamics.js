@@ -23,7 +23,7 @@ $(document).ready(function() {
         var countryName = $(this).text();
         var country = $(this).attr('data-country');
         $.ajax({
-            url: "http://jakobhans.koding.io/dataProcess.php?c=" + country,
+            url: "http://infobeats.claimbcn.com/dataProcess.php?c=" + country,
         }).done(function(data) {
             $('div#overlay').fadeOut();
             $('#tilesWrapper').empty().append(data);
